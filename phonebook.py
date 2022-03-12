@@ -27,7 +27,6 @@ class Book(QMainWindow):
         self.table.insertRow(rows)
         
         for d in data:
-            print(d)
             columns = data.index(d)
             value = QTableWidgetItem(str(d))
             self.table.setItem(rows, columns, value)
